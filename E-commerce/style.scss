@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+$font-family-sans-serif : 'Kumbh Sans', sans-serif;
+$primary: hsl(26, 100%, 55%);
+$secondary : hsl(25, 100%, 94%);
+
+
+@import "bootstrap/scss/bootstrap";
+
+.text-del{
+  font-weight: bold;
+  text-decoration: line-through;
+  color: #b2b2b2;
+}
+
+.product-thumbnail-img{
+  transition: 0.5s;
+}
+
+.product-thumbnail-img:hover,.product-thumbnail-img.active{
+  opacity: 0.5;
+  border:2px solid $primary;
+}
