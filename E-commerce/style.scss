@@ -1,12 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
 @import "bootstrap-icons/font/bootstrap-icons.css";
 
+
+
 $font-family-sans-serif : 'Kumbh Sans', sans-serif;
 $primary: hsl(26, 100%, 55%);
 $secondary : hsl(25, 100%, 94%);
 
+$badge-font-size : 1rem;
+$badge-padding-y : .65rem;
+
+$btn-font-size-lg: 1rem;
+$btn-padding-y-lg:1rem;
+$btn-padding-x-lg:1rem;
+
 
 @import "bootstrap/scss/bootstrap";
+
+.navbar{
+  .nav-link{
+    transition: 0.3s;
+    border-top:5px solid transparent;
+    border-bottom:5px solid transparent;
+    &:hover,&.nav-link.active{
+      border-bottom-color:$primary;
+    }
+  }
+
+}
 
 .text-del{
   font-weight: bold;
@@ -14,11 +35,17 @@ $secondary : hsl(25, 100%, 94%);
   color: #b2b2b2;
 }
 
-.product-thumbnail-img{
-  transition: 0.5s;
+.nav-avatar{
+  width: 50px;
 }
 
-.product-thumbnail-img:hover,.product-thumbnail-img.active{
-  opacity: 0.5;
-  border:2px solid $primary;
+.product-thumbnail-img{
+  transition: 0.5s;
+  border:2px solid white;
+
+  &:hover,&.active{
+    opacity: 0.5;
+    border:2px solid $primary;
+  }
 }
+

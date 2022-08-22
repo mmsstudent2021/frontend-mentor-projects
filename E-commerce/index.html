@@ -8,9 +8,59 @@
     <title>Document</title>
 </head>
 <body>
+<nav class="navbar navbar-expand-lg bg-white border border-bottom fixed-top p-0">
+    <div class="container">
+        <a class="navbar-brand py-4 me-0 me-lg-5" href="#">
+            <img src="images/logo.svg" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link py-5 px-4 active" href="#">Collection</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link py-5 px-4" href="#">Men</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link py-5 px-4" href="#">Woman</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link py-5 px-4" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link py-5 px-4" href="#">Contact</a>
+                </li>
 
+            </ul>
+            <div class="d-flex align-items-center">
+                <div class="dropdown me-4">
+                    <div class="" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-cart h4"></i>
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Action two</a></li>
+                        <li><a class="dropdown-item" href="#">Action three</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <img src="images/image-avatar.png" class="nav-avatar" type="button" data-bs-toggle="dropdown" aria-expanded="false" />
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Action two</a></li>
+                        <li><a class="dropdown-item" href="#">Action three</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
 <div class="container">
-    <div class="row justify-content-around my-5 align-items-center">
+    <div class="row justify-content-around align-items-center min-vh-100">
         <div class="col-md-6 col-lg-5">
             <div class="row g-4">
                 <div class="col-12">
@@ -56,18 +106,18 @@
 
                 <div class="">
                     <div class="btn-group btn-group-lg me-3">
-                        <button class="btn btn-light">
+                        <button class="btn btn-light text-primary fw-bold">
                             <i class="bi bi-dash"></i>
                         </button>
-                        <button class="btn btn-light">
+                        <button class="btn btn-light fw-bold">
                             0
                         </button>
-                        <button class="btn btn-light">
+                        <button class="btn btn-light text-primary fw-bold">
                             <i class="bi bi-plus"></i>
                         </button>
                     </div>
-                    <button class="btn btn-lg btn-primary text-white">
-                        <i class="bi bi-cart-plus"></i> Add To Cart
+                    <button class="btn btn-lg btn-primary text-white px-5">
+                        <i class="bi bi-cart-plus "></i> Add To Cart
                     </button>
                 </div>
             </div>
